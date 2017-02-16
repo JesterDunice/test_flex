@@ -150,10 +150,12 @@ url("../fonts/OpenSans.ttf") format("truetype");
   font-weight: normal;
 }
 html{
+  -webkit-text-size-adjust: none;
   height: 100%;
 }
 
 body {
+  -webkit-text-size-adjust: none;
   background: linear-gradient(to top, #344366, #746da4) no-repeat center center fixed;
   font-family: "OpenSans";
   margin: 0;
@@ -247,6 +249,10 @@ button:active {
 .text-center {
   text-align: center;
 }
+
+.main-box{
+  min-height: 400px;
+}
 @media screen and (min-width: 1225px){
   .main-box{
     margin-left: calc(50% - 512px);
@@ -254,6 +260,8 @@ button:active {
     margin-right: calc(50% - 512px);
     margin-bottom: 100px;
   }
+
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1224px){
@@ -268,6 +276,8 @@ button:active {
 }
 /* main box */
 @media screen and (min-width: 1024px) {
+
+
 
   body{
     overflow-x: hidden;
@@ -519,6 +529,52 @@ button:active {
     width: 16px;
     bottom: 24px;
   }
+
+  .smile-button {
+    cursor: pointer;
+    position: relative;
+    left: 19px;
+    height: 30px;
+    top: 15px;
+    width: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 5px;
+  }
+
+  .app-add-but {
+    float: right;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 5px;
+    width: 30px;
+  }
+
+  .top-menu-but {
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -755,6 +811,51 @@ button:active {
     bottom: 24px;
   }
 
+  .smile-button {
+    cursor: pointer;
+    position: relative;
+    left: 19px;
+    height: 30px;
+    top: 15px;
+    width: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 5px;
+  }
+
+  .app-add-but {
+    float: right;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 5px;
+    width: 30px;
+  }
+
+  .top-menu-but {
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    width: 30px;
+  }
 }
 
 
@@ -955,6 +1056,111 @@ button:active {
     bottom: 24px;
   }
 
+  .smile-button {
+    cursor: pointer;
+    position: relative;
+    left: 19px;
+    height: 30px;
+    top: 15px;
+    width: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 5px;
+  }
+
+  .app-add-but {
+    float: right;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 5px;
+    width: 30px;
+  }
+
+  .top-menu-but {
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .bizapp-logo {
+    display: inline-block;
+    border-top-left-radius: 5px;
+    height: 100%;
+    width: 70px;
+    background: url('../images/logo-mobile.png') no-repeat;
+    background-position-y: 15px;
+    background-position-x: 20px;
+  }
+
+  .smile-button {
+    cursor: pointer;
+    position: relative;
+    left: 19px;
+    height: 30px;
+    top: 15px;
+    width: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 5px;
+  }
+
+  .app-add-but {
+    float: right;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 2px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .top-menu-but {
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 6px;
+    width: 30px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1108,6 +1314,11 @@ button:active {
 /* rsider border*/
 .rsidebar{
   border-left: 1px solid #ccd0d9;
+  overflow-y: auto;
+}
+
+.lsidebar{
+  overflow-y: auto;
 }
 
 /* color inverting */
@@ -1121,20 +1332,7 @@ button:active {
 }
 
 /* left sidebar*/
-.app-add-but {
-  float: right;
-  background: #fff;
-  border: 1px solid #ccd0d9;
-  cursor: pointer;
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: bold;
-  height: 30px;
-  line-height: 10px;
-  padding-bottom: 5px;
-  width: 30px;
-}
+
 
 /* right sidebar*/
 .comp-settings-but {
@@ -1165,9 +1363,7 @@ button:active {
 }
 
 .cursor-hover-mob > p:hover{
-  transform: scale(1.2);
-  padding-left: 2px;
-  filter: ;
+  filter: brightness(200%);
   cursor: pointer;
   transition-duration: 0.1s;
 }
@@ -1189,8 +1385,6 @@ button:active {
   top: 14px;
 }
 
-
-
 .chat-room3 {
   display: inline-block;
   float: right;
@@ -1198,6 +1392,7 @@ button:active {
   height: 30px;
   right: 1px;
   width: 30px;
+  max-width: 30px;
   top: 14px;
 }
 
@@ -1206,24 +1401,8 @@ button:active {
   border-bottom: 2px solid #5A4DC6;
 }
 
-.top-menu-but {
-  background: #fff;
-  border: 1px solid #ccd0d9;
-  cursor: pointer;
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: bold;
-  height: 30px;
-  line-height: 10px;
-  padding-bottom: 10px;
-  width: 30px;
-}
-
 
 /* central area */
-
-
 /* messages hystory box*/
 .history-box {
   border: 1px solid #ccd0d9;
@@ -1371,28 +1550,8 @@ textarea:focus {
   filter: hue-rotate(45deg);
 }
 
-.smile-button {
-  cursor: pointer;
-  position: relative;
-  left: 19px;
-  height: 30px;
-  top: 15px;
-  width: 30px;
-  background: #fff;
-  border: 1px solid #ccd0d9;
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 10px;
-  padding-bottom: 5px;
-}
+
 
 .smile-button:hover {
   filter: invert(1);
 }
-
-/*
-@media screen and (min-width: 1024px) { div.contentblock {width: 1200px;} }
-@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} }
-@media screen and (max-width: 992px) { div. contentblock {width: 970px;} }
