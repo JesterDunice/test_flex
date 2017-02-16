@@ -2,7 +2,7 @@
 /* font-family: "OpenSansRegular"; */
 @font-face {
   font-family: "OpenSans";
-  url("../fonts/OpenSans.ttf") format("truetype");
+url("../fonts/OpenSans.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -149,11 +149,15 @@
   font-style: normal;
   font-weight: normal;
 }
+html{
+  height: 100%;
+}
 
 body {
-  background: linear-gradient(to top, #344366, #746da4);
+  background: linear-gradient(to top, #344366, #746da4) no-repeat center center fixed;
   font-family: "OpenSans";
-  margin: auto;
+  margin: 0;
+  height: 100%;
 }
 
 .small-text {
@@ -266,6 +270,7 @@ button:active {
 @media screen and (min-width: 1024px) {
 
   body{
+    overflow-x: hidden;
 
   }
   .main-box {
@@ -274,8 +279,8 @@ button:active {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 150px rgba(0, 0, 0, 1);
-    height: 923px;
     width: 1024px;
+    height: 100%;
   }
 
   /* top menu*/
@@ -311,7 +316,7 @@ button:active {
   .centr-area {
     margin-left: 200px; /*19.53%;*/
     width: calc(100% - 400px); /*19.53% - 19.53%);*/
-    height: 100%;
+    height: calc(100% - 60px);
   }
 
   .bizapp-logo {
@@ -516,12 +521,12 @@ button:active {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .main-box {
     margin: auto;
     background-color: #fff;
     border-radius: 5px;
-    height: 923px;
+    height: 100%;
     width: 100%;
   }
 
@@ -558,7 +563,7 @@ button:active {
   .centr-area {
     margin-left: 200px; /*19.53%;*/
     width: calc(100% - 400px); /*19.53% - 19.53%);*/
-    height: 100%;
+    height: calc(100% - 60px);
   }
 
   .bizapp-logo {
@@ -758,7 +763,7 @@ button:active {
     margin: auto;
     background-color: #fff;
     border-radius: 5px;
-    height: 923px;
+    height: 100%;
     width: 100%;
   }
 
@@ -795,7 +800,7 @@ button:active {
   .centr-area {
     margin-left: 70px; /*19.53%;*/
     width: calc(100% - 140px);/*19.53% - 19.53%);*/
-    height: 100%;
+    height: calc(100% - 60px);
   }
 
   .bizapp-logo {
@@ -957,7 +962,7 @@ button:active {
     margin: auto;
     background-color: #fff;
     border-radius: 5px;
-    height: 923px;
+    height: 100%;
     width: 100%;
   }
 
@@ -988,7 +993,7 @@ button:active {
   .centr-area {
     margin-left: 70px; /*19.53%;*/
     width: calc(100% - 140px);/*19.53% - 19.53%);*/
-    height: 100%;
+    height: calc(100% - 60px);
     min-width: 270px;
   }
 
@@ -1039,7 +1044,7 @@ button:active {
     margin: auto;
     background-color: #fff;
     border-radius: 5px;
-    height: 923px;
+    height: 100%;
     width: 100%;
   }
 
@@ -1070,7 +1075,7 @@ button:active {
   .centr-area {
     margin-left: calc(50% - 135px);; /*19.53%;*/
     width: calc(100% - 140px);/*19.53% - 19.53%);*/
-    height: 100%;
+    height: calc(100% - 60px);
     min-width: 270px;
   }
 
@@ -1222,7 +1227,7 @@ button:active {
 /* messages hystory box*/
 .history-box {
   border: 1px solid #ccd0d9;
-  height: 721px;
+  height: calc(100% - 142px);
   width: 100%;
 }
 
