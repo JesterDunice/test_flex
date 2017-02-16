@@ -16,22 +16,22 @@
   <div class="top-menu">
 
     <div class="bizapp-logo float-left">
-      <img src="images/logo.png" width="100%"/>
+      <!--img src="images/logo.png" width="100%"/-->
     </div>
 
 
-    <!--div class="mf-box active-room">
+    <div class="mf-box active-room">
        <a href="" class="main-feed-text "><img src="images/main-feed-active.png"/><span
          class="main-feed-text">MAIN FEED</span></a>
     </div>
 
-    <div class="chat-room1">
+    <div class="chat-room1 desktop">
       <a href="" class="small-text small-text-9px"><img
       src="images/jonas-freitag-avatar.png"><span>Jonas + 4 other</span></a>
       <button class="close-chat-but color-invert"></button>
     </div>
 
-    <div class="chat-room2">
+    <div class="chat-room2 desktop">
       <a href="" class="small-text small-text-9px"><img
         src="images/sue-tyson-avatar.png"/><span>Sue Tyson-Ward</span></a>
       <button class="close-chat-but color-invert"></button>
@@ -46,13 +46,14 @@
 
     <div class="chat-room3">
       <button class="top-menu-but color-invert">...</button>
-    </div-->
+    </div>
 
   </div>
   <!-- top area (end point)-->
 
   <!-- left side area (start point)-->
-  <div class="lsidebar">
+  <!-- desktop -->
+  <div class="lsidebar desktop">
 
     <div class="app-head large-text">
       <p><span>APPS</span><button class="app-add-but color-invert">+</button></p>
@@ -97,18 +98,60 @@
     </div>
 
   </div>
+  <!-- mobile -->
+  <div class="lsidebar mobile">
+
+    <div class="app-head">
+      <button class="app-add-but color-invert">+</button>
+    </div>
+
+    <div class="app-list cursor-hover-mob">
+      <p><a href="" class="small-text"><img src="images/jira-logo.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/github-logo.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/amazon-logo.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/msoffice-logo.png"/></a></p>
+    </div>
+
+    <div class="cont-head large-text">
+      <p></p>
+    </div>
+
+    <div class="cont-list cursor-hover-mob">
+      <p>
+        <a href="" class="small-text small-text-va"><img src="images/jonas-freitag-avatar.png" alt="Jonas Freitag"/><img
+          src="images/pic-onl.png" alt="online"
+          class="avat-state"/></a>
+      </p>
+      <p><a href="" class="small-text small-text-va"><img src="images/def-avatar.png"/><img src="images/pic-onl.png"
+                                                                                            alt="online"
+                                                                                            class="avat-state"/></a></p>
+      <p><a href="" class="small-text small-text-va"><img src="images/def-avatar.png"/><img src="images/pic-sleep.png"
+                                                                                            alt="sleep"
+                                                                                            class="avat-state"/></a>
+      </p>
+      <p><a href="" class="small-text small-text-va"><img src="images/sue-tyson-avatar.png"/><img
+        src="images/pic-not-av.png" alt="not avaible" class="avat-state"/></a></p>
+      <p><a href="" class="small-text small-text-va"><img src="images/def-avatar.png"/><img src="images/pic-off.png"
+                                                                                            alt="offline"
+                                                                                            class="avat-state"/></a></p>
+      <p><a href="" class="small-text small-text-va"><img src="images/def-avatar.png"/><img src="images/pic-onl.png"
+                                                                                            alt="online"
+                                                                                            class="avat-state"/></a></p>
+    </div>
+
+  </div>
   <!-- left side area (end point)-->
 
   <!-- right side area (stard point)-->
-  <div class="rsidebar">
+  <!-- desktop -->
+  <div class="rsidebar desktop">
 
     <div class="comp-logo">
       <img src="images/company-logo.png" width="100%"/>
     </div>
     <div class="comp-head large-text">
       <p><span>Company Inc.</span>
-        <button class="comp-settings-but color-invert"></button>
-      </p>
+        <button class="comp-settings-but color-invert float-right"></button></p>
     </div>
 
     <div class="profile-list cursor-hover">
@@ -120,8 +163,25 @@
       <p><a href="" class="small-text"><img src="images/voting-but.png"/><span>Voting</span></a></p>
     </div>
   </div>
-  <!-- right side area (end point)-->
+  <!-- mobile -->
+  <div class="rsidebar mobile">
 
+    <div class="comp-logo"></div>
+
+    <div class="comp-head large-text">
+      <p><button class="comp-settings-but color-invert float-left"></button></p>
+    </div>
+
+    <div class="profile-list cursor-hover-mob">
+      <p><a href="" class="small-text"><img src="images/profile-but.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/user-manager-but.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/team-but.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/events-but.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/notification-but.png"/></a></p>
+      <p><a href="" class="small-text"><img src="images/voting-but.png"/></a></p>
+    </div>
+  </div>
+  <!-- right side area (end point)-->
 
   <!-- central area (start point)-->
   <div class="centr-area">
@@ -184,7 +244,7 @@
 
         <div class="message-history">
 
-          <div class="comment-picture"><img src="images/photo-msg.png"/></div>
+          <div class="comment-picture"><img src="images/photo-msg.png" width="100%"/></div>
           <div class="comment-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla neque, faucibus et massa eu, eleif- end
             commodo ex. Morbi posuere tortor vitae risus euismod, eu eleifend lectus congue.
@@ -234,7 +294,7 @@
       <div class="post-area">
         <textarea name="message-to-send" id="message-to-send" placeholder="Type your message..." rows="3"></textarea>
         <button class="post-but float-right">POST</button>
-        <button class="smile-button">+</button>
+        <button class="smile-button float-left">+</button>
       </div>
 
     </div>
