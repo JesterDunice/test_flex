@@ -545,6 +545,7 @@ button:active {
     font-weight: bold;
     line-height: 10px;
     padding-bottom: 5px;
+    text-align: center;
   }
 
   .app-add-but {
@@ -560,6 +561,7 @@ button:active {
     line-height: 10px;
     padding-bottom: 5px;
     width: 30px;
+    text-align: center;
   }
 
   .top-menu-but {
@@ -574,8 +576,61 @@ button:active {
     line-height: 10px;
     padding-bottom: 10px;
     width: 30px;
+    text-align: center;
   }
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+  .smile-button {
+    cursor: pointer;
+    position: relative;
+    left: 19px;
+    height: 30px;
+    top: 15px;
+    width: 30px;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 2px;
+  }
+
+  .app-add-but {
+    float: right;
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 2px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .top-menu-but {
+    background: #fff;
+    border: 1px solid #ccd0d9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 10px;
+    padding-bottom: 6px;
+    width: 30px;
+    text-align: center;
+  }
+}
+/* iPad mini in portrait */
+
 
 @media screen and (max-width: 1024px) {
   .main-box {
@@ -822,10 +877,10 @@ button:active {
     border: 1px solid #ccd0d9;
     border-radius: 3px;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     line-height: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
   }
 
   .app-add-but {
@@ -835,12 +890,13 @@ button:active {
     cursor: pointer;
     border-radius: 3px;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     height: 30px;
     line-height: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     width: 30px;
+    text-align: center;
   }
 
   .top-menu-but {
@@ -849,12 +905,13 @@ button:active {
     cursor: pointer;
     border-radius: 3px;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: bold;
     height: 30px;
     line-height: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     width: 30px;
+    text-align: center;
   }
 }
 
@@ -884,6 +941,7 @@ button:active {
     float: left;
     height: calc(100% - 61px);
     width: 70px; /* 19.53%;*/
+    overflow-y: auto;
   }
 
   /* right sidebar*/
@@ -895,6 +953,7 @@ button:active {
     float: right;
     height: calc(100% - 60px);
     width: 70px; /* 19.53%; */
+    overflow-y: auto;
   }
 
   /* central area */
@@ -1067,64 +1126,6 @@ button:active {
     border: 1px solid #ccd0d9;
     border-radius: 3px;
     font-family: inherit;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 10px;
-    padding-bottom: 5px;
-  }
-
-  .app-add-but {
-    float: right;
-    background: #fff;
-    border: 1px solid #ccd0d9;
-    cursor: pointer;
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 10px;
-    padding-bottom: 5px;
-    width: 30px;
-  }
-
-  .top-menu-but {
-    background: #fff;
-    border: 1px solid #ccd0d9;
-    cursor: pointer;
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 10px;
-    padding-bottom: 10px;
-    width: 30px;
-  }
-}
-
-@media screen and (max-width: 640px){
-  .bizapp-logo {
-    display: inline-block;
-    border-top-left-radius: 5px;
-    height: 100%;
-    width: 70px;
-    background: url('../images/logo-mobile.png') no-repeat;
-    background-position-y: 15px;
-    background-position-x: 20px;
-  }
-
-  .smile-button {
-    cursor: pointer;
-    position: relative;
-    left: 19px;
-    height: 30px;
-    top: 15px;
-    width: 30px;
-    background: #fff;
-    border: 1px solid #ccd0d9;
-    border-radius: 3px;
-    font-family: inherit;
     font-size: 10px;
     font-weight: bold;
     line-height: 10px;
@@ -1160,6 +1161,18 @@ button:active {
     padding-bottom: 6px;
     width: 30px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .bizapp-logo {
+    display: inline-block;
+    border-top-left-radius: 5px;
+    height: 100%;
+    width: 70px;
+    background: url('../images/logo-mobile.png') no-repeat;
+    background-position-y: 15px;
+    background-position-x: 20px;
   }
 }
 
@@ -1314,11 +1327,6 @@ button:active {
 /* rsider border*/
 .rsidebar{
   border-left: 1px solid #ccd0d9;
-  overflow-y: auto;
-}
-
-.lsidebar{
-  overflow-y: auto;
 }
 
 /* color inverting */
